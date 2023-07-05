@@ -107,6 +107,10 @@ database|Yes|The database where the dataset resides.|
 
 ## Dataset and Schema
 This section describes the dataset and the schema of the data contract.
+<details>
+  <summary>YAML File</summary>
+</details>
+
 
 ```YAML
 dataset: 
