@@ -258,9 +258,8 @@ dataset:
 ```
 </details>
 
-
-### Definitions
 <details>
+  <summary>Definitions</summary>
   
 |Key|Required|Description|
 | --- | --- | --- | 
@@ -302,10 +301,9 @@ contractStakeholders:
 ```
 </details>
 
-### Definitions
-
 <details>
-
+  <summary>Definitions</summary>
+  
 |Key|Required|Description|
 | --- | --- | --- |
 contractStakeholders|No|Array
@@ -338,10 +336,9 @@ This section lists the roles that a consumer may need to access the dataset depe
 ```
 </details>
 
-### Definitions
-
 <details>
-
+  <summary>Definitions</summary>
+  
 |Key|Required|Description|
 | --- | --- | --- |
 roles|Yes|Array. A list of roles that will provide user access to the dataset.|
