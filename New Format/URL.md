@@ -109,8 +109,6 @@ database|Yes|The database where the dataset resides.|
 This section describes the dataset and the schema of the data contract.
 <details>
   <summary>YAML File</summary>
-</details>
-
 
 ```YAML
 dataset: 
@@ -251,9 +249,12 @@ dataset:
         transformDescription: null
         sampleValues: null
 ```
+</details>
+
 
 ### Definitions
-
+<details>
+  
 |Key|Required|Description|
 | --- | --- | --- | 
 dataset.columns.isPrimary|No|Boolean value specifying whether the column is primary or not. Default is false.|
@@ -275,10 +276,14 @@ dataset.table|Yes|Name of the table being cataloged; the value should only conta
 dataset.physicalName|No|Physical name of the table, default value is table name + version separated by underscores, as `table_1_2_0`.|
 dataset.columns||Yes|Array. A list of columns in the table.|
 dataset.columns.column|Yes|the name of the column.|
+</details>
 
 ## Stakeholders
 This section lists stakeholders and the history of their relation with this data contract.
 
+<details>
+  <summary>YAML File</summary>
+  
 ```YAML
 contractStakeholders: 
   - name: David Austin
@@ -288,8 +293,11 @@ contractStakeholders:
     dateOut: null
     replacedByUsername: null
 ```
+</details>
 
 ### Definitions
+
+<details>
 
 |Key|Required|Description|
 | --- | --- | --- |
@@ -300,11 +308,14 @@ contractStakeholders.role|No|The stakeholder's job role; Examples might be owner
 contractStakeholders.dateIn|No|The date when the user became a stakeholder.|
 contractStakeholders.dateOut|No|The date when the user ceased to be a stakeholder|
 contractStakeholders.replacedByUsername|No|The username of the user who replaced the stakeholder|
-
+</details>
 ## Roles 
 
 This section lists the roles that a consumer may need to access the dataset depending on the type of access they require.
 
+<details>
+  <summary>YAML File</summary>
+  
 ```YAML
 - role: datagov_r
     access: read only
@@ -317,8 +328,11 @@ This section lists the roles that a consumer may need to access the dataset depe
       - name: Senthil Salvaraj; Parker Hanna
         approvalLevel: 1
 ```
+</details>
 
 ### Definitions
+
+<details>
 
 |Key|Required|Description|
 | --- | --- | --- |
@@ -327,9 +341,13 @@ roles.role|Yes|name of the IAM role that provides access to the dataset.|
 roles.access|Yes|the type of access provided by the IAM role; the value will generally come directly from the "BQ dataset to IAM roles mapping" document.|
 roles.firstLevelApprovers|No|the name(s) of the first level approver(s) of the role.|
 roles.secondLevelApprovers|No|the name(s) of the second level approver(s) of the role.|
+</details>
 
 ### Service Level Agreements
 
+<details>
+  <summary>YAML File</summary>
+  
 ```YAML
 serviceLevelAgreements:
   - value:
@@ -339,6 +357,7 @@ serviceLevelAgreements:
     frequency:
     unit:
 ```
+</details>
 
 ### Do we need to cover these bullet points??
 * Service-level objectives
@@ -349,6 +368,3 @@ serviceLevelAgreements:
   * Availability
   * Performance
   * Data volume
-* Terms
-  * Allowed usage and access patterns
-  * Query frequency
