@@ -386,8 +386,6 @@ dataset.columns.isNullable|Yes|indicates if the column may contain Null values; 
 dataset.columns.description| Yes| description of the column. Null if the column name is self-explanatory |
 dataset.columns.criticalDataElementStatus|No|True or false indicator; If element is considered a critical data element (CDE) then true else false.|
 dataset.columns.tags|No|A list of tags that may be assigned to the dataset, table or column; the tags keyword may appear at any level.|
-dataset.columns.classification|Yes|the PayPal data classification indicating the class of data in the column; expected values are 1, 2, 3, 4, or 5.|
-|dataset.columns.authoritativeDefinitions|No|list of links to sources that provide more detail on column logic or values; examples would be URL to a GitHub repo, Collibra, on another tool.|
 dataset|Yes|Array. A list of tables within the dataset to be cataloged
 dataset.columns.transformSourceTables| No | Source table(s) for the data in this column. Common sources would be OCE and OPUL |
 dataset.columns.transformLogic| No | Exact SQL statements performed to get the data in its current state |
