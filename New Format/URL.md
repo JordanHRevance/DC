@@ -22,6 +22,8 @@ It specifies the guarantees about a provided data set and expectations concernin
 
 ## Metadata
 This section contains general information about this Data Contract.
+<details>
+  <summary>YAML File</summary>
 
 ```YAML
 # URL MASTER
@@ -71,6 +73,10 @@ schedulerAppName: null #IE Data Bricks, Airflow, Data ALM, etc.
 # Tags
 tags: null
 ```
+</details>
+
+<details>
+  <summary>Definitions</summary>
 
 |Key|Required|Description|
 | --- | --- | --- |
@@ -104,6 +110,7 @@ description|No|Object.|
 datasetProject|Yes|Database in which the target table resides.|
 datasetName|Yes|The schema in Snowflake where the dataSet takes place.|
 database|Yes|The database where the dataset resides.|
+</details>
 
 ## Dataset and Schema
 This section describes the dataset and the schema of the data contract.
@@ -309,6 +316,7 @@ contractStakeholders.dateIn|No|The date when the user became a stakeholder.|
 contractStakeholders.dateOut|No|The date when the user ceased to be a stakeholder|
 contractStakeholders.replacedByUsername|No|The username of the user who replaced the stakeholder|
 </details>
+
 ## Roles 
 
 This section lists the roles that a consumer may need to access the dataset depending on the type of access they require.
