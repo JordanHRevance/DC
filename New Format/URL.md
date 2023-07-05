@@ -348,19 +348,4 @@ roles.firstLevelApprovers|No|the name(s) of the first level approver(s) of the r
 roles.secondLevelApprovers|No|the name(s) of the second level approver(s) of the role.|
 </details>
 
-### Service Level Agreements
-
-<details>
-  <summary>YAML File</summary>
-  
-```YAML
-serviceLevelAgreements:
-  - value:
-    frequency:
-    unit:
-  - value:
-    frequency:
-    unit:
-```
-</details>
 
