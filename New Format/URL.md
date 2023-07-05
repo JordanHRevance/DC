@@ -364,12 +364,3 @@ serviceLevelAgreements:
 ```
 </details>
 
-### Do we need to cover these bullet points??
-* Service-level objectives
-  * Interval of change
-  * Latency
-  * Completeness
-  * Freshness
-  * Availability
-  * Performance
-  * Data volume
