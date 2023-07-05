@@ -21,8 +21,7 @@ It specifies the guarantees about a provided data set and expectations concernin
 * This contract describes the keys and values expected in the Address data contract. It is divided in multiple sections: Metadata, Dataset & Schema, Stakeholders, Roles, Concequences, and Automation. Each section contains a [YAML](https://www.redhat.com/en/topics/automation/what-is-yaml) file followed by definitions for its keys.
 
 ## Metadata
-* [Table of Contents](#Table-of-Contents)
-* This section contains general information about this Data Contract.
+This section contains general information about this Data Contract.
 
 <details>
   <summary>YAML File</summary>
@@ -111,7 +110,6 @@ database|Yes|The database where the dataset resides.|
 </details>
 
 ## Dataset and Schema
-[Table of Contents](#Table-of-Contents)
 This section describes the dataset and the schema of the data contract.
 <details>
   <summary>YAML File</summary>
@@ -498,7 +496,6 @@ dataset.columns.column|Yes|the name of the column.|
 </details>
 
 ## Stakeholders
-[Table of Contents](#Table-of-Contents)
 This section lists stakeholders and the history of their relation with this data contract.
 <details>
   <summary>YAML File</summary>
@@ -529,7 +526,6 @@ contractStakeholders.replacedByUsername|No|The username of the user who replaced
 </details>
 
 ## Roles 
-[Table of Contents](#Table-of-Contents)
 This section lists the roles that a consumer may need to access the dataset depending on the type of access they require.
 
 <details>
