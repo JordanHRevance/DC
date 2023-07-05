@@ -23,8 +23,6 @@ It specifies the guarantees about a provided data set and expectations concernin
 ## Metadata
 * [Table of Contents](#Table-of-Contents)
 * This section contains general information about this Data Contract.
-<details>
-  <summary>YAML File</summary>
   
 ```YAML
 # ADDRESS MASTER
@@ -71,6 +69,9 @@ tags: null
 ```
 </details>
 
+<details>
+  <summary>Definitions</summary>
+  
 |Key|Required|Description|
 | --- | --- | --- |
 | version|Yes|Current version of the data contract.|
@@ -104,9 +105,13 @@ datasetProject|Yes|Database in which the target table resides.|
 datasetName|Yes|The schema in Snowflake where the dataSet takes place.|
 database|Yes|The database where the dataset resides.|
 
+</details>
+
 ## Dataset and Schema
 [Table of Contents](#Table-of-Contents)
 This section describes the dataset and the schema of the data contract.
+<details>
+  <summary>YAML File</summary>
 
 ```YAML
 dataset:
@@ -460,8 +465,10 @@ dataset:
         transformDescription: null
         sampleValues: null
 ```
+</details>
 
-### Definitions
+<details>
+  <summary>Definitions</summary>
 
 |Key|Required|Description|
 | --- | --- | --- | 
@@ -485,10 +492,14 @@ dataset.physicalName|No|Physical name of the table, default value is table name 
 dataset.columns||Yes|Array. A list of columns in the table.|
 dataset.columns.column|Yes|the name of the column.|
 
+</details>
+
 ## Stakeholders
 [Table of Contents](#Table-of-Contents)
 This section lists stakeholders and the history of their relation with this data contract.
-
+<details>
+  <summary>YAML File</summary>
+  
 ```YAML
 contractStakeholders: 
   - name: David Austin
@@ -498,8 +509,10 @@ contractStakeholders:
     dateOut: null
     replacedByUsername: null
 ```
+</details>
 
-### Definitions
+<details>
+  <summary>Definitions</summary>
 
 |Key|Required|Description|
 | --- | --- | --- |
@@ -510,11 +523,15 @@ contractStakeholders.role|No|The stakeholder's job role; Examples might be owner
 contractStakeholders.dateIn|No|The date when the user became a stakeholder.|
 contractStakeholders.dateOut|No|The date when the user ceased to be a stakeholder|
 contractStakeholders.replacedByUsername|No|The username of the user who replaced the stakeholder|
+</details>
 
 ## Roles 
 [Table of Contents](#Table-of-Contents)
 This section lists the roles that a consumer may need to access the dataset depending on the type of access they require.
 
+<details>
+  <summary>YAML File</summary>
+  
 ```YAML
 - role: datagov_r
     access: read only
@@ -527,8 +544,10 @@ This section lists the roles that a consumer may need to access the dataset depe
       - name: Senthil Salvaraj; Parker Hanna
         approvalLevel: 1
 ```
+</details>
 
-### Definitions
+<details>
+  <summary>Definitions</summary>
 
 |Key|Required|Description|
 | --- | --- | --- |
@@ -538,12 +557,5 @@ roles.access|Yes|the type of access provided by the IAM role.|
 roles.firstLevelApprovers|No|the name(s) of the first level approver(s) of the role.|
 roles.secondLevelApprovers|No|the name(s) of the second level approver(s) of the role.|
 
-## Service Level Agreements
-[Table of Contents](#Table-of-Contents)
-```YAML
-serviceLevelAgreements:
-  - property:
-    value:
-    unit:
-```
+</details>
 
