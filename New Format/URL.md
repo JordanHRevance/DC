@@ -23,7 +23,7 @@ It specifies the guarantees about a provided data set and expectations concernin
 ## Metadata
 This section contains general information about this Data Contract.
 <details>
-  <summary>YAML File</summary>
+  <summary>Keys and Values</summary>
 
 ```YAML
 # URL MASTER
@@ -109,7 +109,7 @@ tags|No|a list of tags that may be assigned to the dataset, table or column; the
 ## Dataset and Schema
 This section describes the dataset and the schema of the data contract.
 <details>
-  <summary>YAML File</summary>
+  <summary>Keys and Values</summary>
 
 ```YAML
 dataset:
@@ -271,7 +271,7 @@ dataset.columns.column|Yes|the name of the column.|
 This section lists stakeholders and the history of their relation with this data contract.
 
 <details>
-  <summary>YAML File</summary>
+  <summary>Keys and Values</summary>
   
 ```YAML
 contractStakeholders: 
@@ -303,7 +303,7 @@ contractStakeholders.replacedByUsername|No|The username of the user who replaced
 This section lists the roles that a consumer may need to access the dataset depending on the type of access they require.
 
 <details>
-  <summary>YAML File</summary>
+  <summary>Keys and Values</summary>
   
 ```YAML
 - role: datagov_r
